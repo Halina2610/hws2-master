@@ -17,12 +17,12 @@ import avatar from './avatar.png'
 export type MessageType = {
     id: number
     user: {
-        avatar: string; // можно менять
-        name: string  // можно менять
+        avatar: string;
+        name: string
     },
     message: {
-        text: string // можно менять
-        time: string // можно менять
+        text: string
+        time: string
     },
 }
 
@@ -35,7 +35,7 @@ export const message0: MessageType = {
     },
     message: {
         text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        time: '9:00', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
@@ -46,7 +46,7 @@ export const friendMessage0: MessageType = {
     },
     message: {
         text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        time: '9:00', // можно менять
     },
 }
 

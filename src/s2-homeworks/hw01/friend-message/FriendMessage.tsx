@@ -5,7 +5,6 @@ import {MessageType} from '../HW1';
 type FriendMessagePropsType = {
     message: MessageType
 }
-
 // создать тип вместо any и отобразить приходящие данные \\\\
 const FriendMessage = (props: FriendMessagePropsType) => {
     return (
@@ -39,14 +38,16 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                     </pre>
                 </div>
             </div>
-            <div
-                id={'hw1-friend-time-' + props.message.id}
-                className={s.friendTime}
-            >
-                {props.message.message.time}
+            <div>
+                <div
+                    id={'hw1-friend-time-' + props.message.id}
+                    className={s.friendTime}
+                >
+                    {props.message.message.time}
 
-                {/**/}
+                    {/**/}
 
+                </div>
             </div>
         </div>
     )
